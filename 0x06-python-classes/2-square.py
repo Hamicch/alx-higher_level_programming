@@ -6,7 +6,7 @@ class Square:
     """ Try and except to check TypeError and ValueError """
     def __init__(self, size=0):
         """Initializes a square with a given size"""
-        if not ininstance(size, int):
+        if not isinstance(size, int):
             raise TypeError('size must be an integer')
         else:
             if size < 0:
