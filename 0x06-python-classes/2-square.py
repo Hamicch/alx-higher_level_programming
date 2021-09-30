@@ -1,4 +1,4 @@
-#!/usr/usr/python3
+#!/usr/python3
 """  This module defines a square """
 
 
