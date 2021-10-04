@@ -4,7 +4,7 @@
 
 
 class Square:
-    """Check for TypeError and ValueError
+    """Represents a square with for 4 equal sides
     """
     def __init__(self, size=0):
         """Initializes a Square with a given size.
@@ -16,3 +16,10 @@ class Square:
                 raise ValueError('size must be >= 0')
             else:
                 self.__size = size
+
+    def area(self):
+        """Computes the area of this Square.
+        Returns:
+            int: The area of the Square.
+        """
+        return self.__size ** 2
