@@ -2,5 +2,5 @@
 
 SELECT score, name
 FROM second_table
-WHERE NOT name
-ORDER BY DESC;
+WHERE IS NOT NULL
+ORDER BY score DESC;
