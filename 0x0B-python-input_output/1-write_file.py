@@ -1,15 +1,10 @@
 #!/usr/bin/python3
-"""
-The program returns the number of lines of a text file.
-"""
+'''task 1 module'''
 
 
-def number_of_lines(filename=""):
-    """Opens/closes the file in a safe way,
-       and returns the number of lines.
-    """
-    i = 0
-    with open(filename, encoding='utf-8') as fd:
-        for lines in fd:
-            i += 1
-        return i
+def write_file(filename="", text=""):
+    '''writes a string to  file overwrites if exist'''
+    with open(filename, mode='w', encoding='utf-8') as f:
+        len = f.write(text)
+
+    return len
